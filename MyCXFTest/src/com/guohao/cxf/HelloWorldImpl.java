@@ -8,6 +8,7 @@ public class HelloWorldImpl implements HelloWorld {
 		System.out.println("CXF Test name=" + name);
 		System.out.println("CXF Test name=" + name);
 		System.out.println("CXF Test name=             " + name);
+
 	}
 
 }
