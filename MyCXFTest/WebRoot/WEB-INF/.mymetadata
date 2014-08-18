@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="EasyToTravel"
+  id="myeclipse.1386663050455"
+  context-root="/EasyToTravel"
+  j2ee-spec="1.4"
+  archive="EasyToTravel.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

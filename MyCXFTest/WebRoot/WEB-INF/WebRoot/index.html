@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAN_D1sqSytmF_5S-IDE4fD-djenwSit00&sensor=false&libraries=places">
+    </script>
+    <script src="./js/jquery-1.8.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/demo.js"></script>
+    <script type="text/javascript" src="./js/ajax-pushlet-client.js"></script>
+<title>demo</title>
+</head>
+
+<body>
+<div class="header">
+	<img src="./images/logo.png" style="margin-top:10px">
+	<img src="./images/headright.png" style="float:right;margin-right:10px">
+</div>
+<div class="main">
+  <div class="sidebar">
+    <div style="margin-left:10px">
+      <form class="form-inline" role="form">
+        <div class="form-group">
+          <input class="form-control" id="phoneNum" placeholder="Phone Number" style="margin-top:10px;width:150px">
+            <button type="button" class="btn btn-primary" style="margin-top:10px;" onclick="searchUserLoc()">Search</button>
+        </div>
+      </form>
+    </div>
+    <div style="margin-left:10px;margin-top:30px;">
+      <table style="text-align:center;">
+      	<tr style="height:100px">
+      	  <td>
+      	    <div class="tablediv"><img src="./images/poi/restaurant.png" style="cursor:hand" onclick="findPoi('restaurant')"><label>Restaurant</label>
+      	    </div>
+      	  </td>
+      	  <td>
+      	    <div class="tablediv"><img src="./images/poi/hotel.png" style="cursor:hand" onclick="findPoi('hotel')"><label style="width:50px">Hotel</label></div>
+      	  </td>
+      	  <td>
+      	    <div class="tablediv"><img src="./images/poi/banck.png" style="cursor:hand" onclick="findPoi('bank')"><label style="width:50px">Bank</label></div>
+      	  </td>
+        </tr>
+        <tr>
+		  <td>
+      	    <div class="tablediv"><img src="./images/poi/shoppingmall.png" style="cursor:hand" onclick="findPoi('shopping_mall')"><label>ShoppingMall</label></div>
+      	  </td>
+      	  <td>
+      	    <div class="tablediv" ><img src="./images/poi/bus.png" style="cursor:hand" onclick="findPoi('bus_station')"><label>BusStation</label></div>
+      	  </td>
+      	  <td>
+      	    <div class="tablediv"><img src="./images/poi/park.png" style="cursor:hand" onclick="findPoi('park')"><label style="width:50px">Park</label></div>
+      	  </td>
+        </tr>
+        <tr>
+      	  <td>
+      	    <div class="tablediv"><img src="./images/poi/movie.png" style="cursor:hand" onclick="findPoi('movie_theater')"><label>MovieTheater</label></div>
+      	  </td>
+      	  <td>
+      	    <div class="tablediv"><img src="./images/poi/hospital.png" style="cursor:hand" onclick="findPoi('hospital')"><label>Hospital</label></div>
+      	  </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="map">
+  	<div id="map_canvas" style="height:100%"></div>
+  </div>
+</div>
+</body>
+</html>
