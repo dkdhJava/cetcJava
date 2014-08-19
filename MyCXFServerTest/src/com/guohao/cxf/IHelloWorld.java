@@ -7,6 +7,11 @@ import javax.jws.WebService;
 
 @WebService
 public interface IHelloWorld {
+	/**
+	 * ·µ»Ø
+	 * @param name
+	 * @return
+	 */
 	@WebMethod
 	public @WebResult String hello(@WebParam String name);
 }
