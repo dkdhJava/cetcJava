@@ -8,7 +8,6 @@ public class HelloWorldImpl implements IHelloWorld {
 		System.out.println("hello," + name);
 		System.out.println("hello," + name);
 		System.out.println("hello," + name);
-		System.out.println("hello,55555555555555" + name);
 		System.out.println("hello," + name);
 		System.out.println("hello," + name);
 		System.out.println("hello," + name);
