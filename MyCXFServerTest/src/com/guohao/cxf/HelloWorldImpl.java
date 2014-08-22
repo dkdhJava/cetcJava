@@ -19,6 +19,7 @@ public class HelloWorldImpl implements IHelloWorld {
 		System.out.println("hello," + name);
 		System.out.println("hello," + name);
 		System.out.println("hello,the world" );
+		System.out.println("hello,guohao" );
 		return "hello," + name;
 	}
 
